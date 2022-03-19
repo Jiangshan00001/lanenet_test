@@ -80,10 +80,10 @@ if __name__ == '__main__':
         axarr[1].imshow(mask_image)
 
         for i in range(len(lane_lines)):
-            axarr[1+i].plot(lane_lines[i][1],lane_lines[i][0])
-            axarr[1+i].set_xlim([0, DEFAULT_SIZE[1]])
-            axarr[1 + i].set_ylim([DEFAULT_SIZE[0],0])
-            axarr[1 + i].set_aspect('equal')
+            axarr[2+i].plot(lane_lines[i][1],lane_lines[i][0])
+            axarr[2+i].set_xlim([0, DEFAULT_SIZE[1]])
+            axarr[2 + i].set_ylim([DEFAULT_SIZE[0],0])
+            axarr[2 + i].set_aspect('equal')
         plt.savefig('./pics/run_resultimage.png')
         plt.show()
 
